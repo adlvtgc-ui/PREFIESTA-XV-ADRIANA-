@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Fiesta Halloween - Adri</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&family=Alex+Brush&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0; padding: 0;
+        background-color: #333333; 
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        min-height: 100vh;
+    }
+    /* Contenedor con la proporción de un celular (9:16) */
+    .flyer {
+        width: 100%; max-width: 400px; aspect-ratio: 9/16;
+        background: linear-gradient(135deg, #fef5fa, #f9e2f5);
+        border: 3px solid #B87333;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        padding: 20px 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    /* Estilo para que la telaraña cubra todo el top de lado a lado */
+    .telaraña {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.85;
+        mix-blend-mode: multiply; 
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    .titulo { font-family: 'Cinzel', serif; font-size: 1.5rem; color: #85386e; letter-spacing: 2px; margin: 0; z-index: 3; }
+    .nombre { font-family: 'Alex Brush', cursive; font-size: 4.5rem; color: #85386e; margin: -5px 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.1); line-height: 1; z-index: 3;}
+    .divisor { width: 70px; height: 1px; background-color: #B87333; margin: 8px auto; z-index: 3;}
+    
+    .bloque-info { margin: 6px 0; z-index: 3; position: relative; }
+    .texto { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; color: #333; margin: 3px 0; font-weight: 400; line-height: 1.3; }
+    
+    .destacado { font-family: 'Cinzel', serif; font-size: 1rem; color: #85386e; font-weight: bold; margin-top: 10px; z-index: 3; position: relative; letter-spacing: 1px;}
+    
+    .confirmacion { 
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 0.8rem; 
+        color: #d97706; 
+        margin-top: 10px; 
+        font-weight: 700; 
+        letter-spacing: 0.5px;
+        z-index: 3; 
+        position: relative;
+    }
+
+    /* Botón de WhatsApp integrado dentro del flyer */
+    .btn-whatsapp-interno {
+        background-color: #25d366;
+        color: #fff;
+        border: 1px solid #128c7e;
+        padding: 8px 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.75rem;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 6px;
+        z-index: 3;
+        position: relative;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        transition: background 0.3s;
+    }
+    .btn-whatsapp-interno:hover {
+        background-color: #1ebe5d;
+    }
+    
+    /* Estrellitas mágicas fijas para la imagen */
+    .estrellita {
+        position: absolute; background: #ffffff;
+        clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
+        filter: drop-shadow(0 0 4px rgba(212, 137, 185, 0.9));
+        z-index: 1;
+    }
+</style>
+</head>
+<body>
+
+<div class="flyer" id="flyer-imagen">
+    <!-- Telaraña cubriendo todo el top -->
+    <img src="telarana.jpg" alt="Telaraña Halloween" class="telaraña">
+
+    <div class="bloque-info" style="margin-top: 15px;">
+        <div class="titulo"> PRE-FIESTA </div>
+        <div class="titulo" style="font-size: 0.9rem; margin-top: 2px; letter-spacing: 1px;">HALLOWEEN EDITION</div>
+    </div>
+    
+    <div class="nombre">Adriana</div>
+    
+    <div class="divisor"></div>
+    
+    <div class="bloque-info">
+        <p class="texto">¡Acompáñame a empezar la celebración<br>en una reunión de terror y mucha diversión! 👻</p>
+    </div>
+    
+    <div class="divisor"></div>
+    
+    <div class="bloque-info">
+        <p class="texto"><strong>Viernes, 18 de Diciembre</strong></p>
+        <p class="texto">20:00 hrs.</p>
+    </div>
+
+    <div class="bloque-info">
+        <p class="texto"><strong>[Nombre del Lugar]</strong></p>
+        <p class="texto">[Calle de Ejemplo #123, Colonia, Ciudad]</p>
+    </div>
+    
+    <div class="bloque-info" style="margin-top: 6px;">
+        <div class="destacado">🎃 EVENTO DE DISFRACES 🎃 </div>
+        <p class="texto" style="font-size: 0.75rem; margin-top: 4px; font-style: italic; font-weight: 600; color: #85386e;">¡Ven con tu mejor disfraz y prepárate para una noche terroríficamente increíble!</p>
+    </div>
+    
+    
+    <div class="bloque-info" style="margin-top: 6px;">
+        <div class="confirmacion">¡Confirma tu asistencia por mensaje!</div>
+        <a href="https://wa.me/525611730224?text=¡Hola%20Adriana!%20🎃%20Confirmo%20mi%20asistencia%20a%20tu%20Pre-Fiesta%20de%20Halloween.%20¡Allá%20nos%20vemos!" target="_blank" class="btn-whatsapp-interno">
+            💬 Confirmar por WhatsApp
+        </a>
+    </div>
+</div>
+
+<script>
+    // Colocar estrellitas estáticas en el fondo
+    const flyer = document.getElementById('flyer-imagen');
+    for (let i = 0; i < 40; i++) {
+        let star = document.createElement('div');
+        star.classList.add('estrellita');
+        star.style.top = Math.random() * 100 + '%';
+        star.style.left = Math.random() * 100 + '%';
+        
+        let size = Math.random() * 12 + 6 + 'px'; 
+        star.style.width = size;
+        star.style.height = size;
+        star.style.opacity = Math.random() * 0.6 + 0.4; 
+        flyer.appendChild(star);
+    }
+</script>
+</body>
+</html>
