@@ -59,30 +59,46 @@
         position: relative;
     }
 
-    /* Botón de WhatsApp integrado dentro del flyer */
-    .btn-whatsapp-interno {
-        background-color: #25d366;
+    /* =========================================
+       NUEVOS ESTILOS ARMONIZADOS PARA BOTONES 
+       ========================================= */
+    .btn-elegante {
         color: #fff;
-        border: 1px solid #128c7e;
-        padding: 8px 10px;
+        padding: 8px 18px;
         font-family: 'Montserrat', sans-serif;
         font-size: 0.75rem;
-        font-weight: bold;
-        border-radius: 20px;
+        font-weight: 700;
+        border-radius: 25px; /* Bordes suaves y modernos */
         cursor: pointer;
         text-decoration: none;
         display: inline-flex;
         align-items: center;
+        justify-content: center;
         gap: 6px;
-        margin-top: 6px;
+        margin-top: 8px;
         z-index: 3;
         position: relative;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-        transition: background 0.3s;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        transition: transform 0.2s ease, background-color 0.3s ease;
     }
-    .btn-whatsapp-interno:hover {
-        background-color: #1ebe5d;
+    
+    .btn-elegante:hover {
+        transform: scale(1.05); /* Efecto sutil de zoom al pasar el mouse */
     }
+
+    /* Variante Mapa (Naranja Halloween) */
+    .btn-mapa {
+        background-color: #d97706;
+        border: 1px solid #b45f06;
+    }
+    .btn-mapa:hover { background-color: #b45f06; }
+
+    /* Variante WhatsApp (Morado Tema) */
+    .btn-whatsapp {
+        background-color: #85386e;
+        border: 1px solid #66225c;
+    }
+    .btn-whatsapp:hover { background-color: #66225c; }
     
     /* Estrellitas mágicas fijas para la imagen */
     .estrellita {
@@ -121,8 +137,13 @@
 
     <div class="bloque-info">
         <p class="texto"><strong>World Trade Center Mexiquense</strong></p>
-        <p class="texto"> Cto. Circunvalación Ote. 10, Cd Satélite, 53100 Naucalpan de Juárez, Estado de México</p>
-        <a href="https://maps.app.goo.gl/FtNAS2uFb3nTH7ks7" target="_blank" class="btn">Ver mapa</a>
+        <!-- Hice la dirección un poco más pequeña para que no se amontone -->
+        <p class="texto" style="font-size: 0.75rem; margin-bottom: 5px;"> Cto. Circunvalación Ote. 10, Cd Satélite, 53100 Naucalpan de Juárez, Méx.</p>
+        
+        <!-- Botón del Mapa Armonizado -->
+        <a href="https://maps.app.goo.gl/FtNAS2uFb3nTH7ks7" target="_blank" class="btn-elegante btn-mapa">
+            📍 Ver mapa
+        </a>
     </div>
     
     <div class="bloque-info" style="margin-top: 6px;">
@@ -133,7 +154,8 @@
     
     <div class="bloque-info" style="margin-top: 6px;">
         <div class="confirmacion">¡Confirma tu asistencia por mensaje!</div>
-        <a href="https://wa.me/525611730224?text=¡Hola%20Adriana!%20🎃%20Confirmo%20mi%20asistencia%20a%20tu%20Pre-Fiesta%20de%20Halloween.%20¡Allá%20nos%20vemos!" target="_blank" class="btn-whatsapp-interno">
+        <!-- Botón de WhatsApp Armonizado -->
+        <a href="https://wa.me/525611730224?text=¡Hola%20Adriana!%20🎃%20Confirmo%20mi%20asistencia%20a%20tu%20Pre-Fiesta%20de%20Halloween.%20¡Allá%20nos%20vemos!" target="_blank" class="btn-elegante btn-whatsapp">
             💬 Confirmar por WhatsApp
         </a>
     </div>
