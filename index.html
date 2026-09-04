@@ -60,40 +60,40 @@
     }
 
     /* =========================================
-       NUEVOS ESTILOS ARMONIZADOS PARA BOTONES 
+       BOTONES PROPORCIONADOS Y MÁS SUTILES
        ========================================= */
     .btn-elegante {
         color: #fff;
-        padding: 8px 18px;
+        padding: 5px 14px; /* Relleno reducido para hacerlos más delgados */
         font-family: 'Montserrat', sans-serif;
-        font-size: 0.75rem;
-        font-weight: 700;
-        border-radius: 25px; /* Bordes suaves y modernos */
+        font-size: 0.7rem; /* Letra más pequeña y proporcionada */
+        font-weight: 600; /* Menos grueso que antes para mayor elegancia */
+        border-radius: 15px; /* Bordes redondeados más sutiles */
         cursor: pointer;
         text-decoration: none;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 6px;
-        margin-top: 8px;
+        gap: 5px; /* Espacio reducido entre el emoji y el texto */
+        margin-top: 5px;
         z-index: 3;
         position: relative;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Sombra mucho más suave */
         transition: transform 0.2s ease, background-color 0.3s ease;
     }
     
     .btn-elegante:hover {
-        transform: scale(1.05); /* Efecto sutil de zoom al pasar el mouse */
+        transform: scale(1.05); 
     }
 
-    /* Variante Mapa (Naranja Halloween) */
+    /* Variante Mapa */
     .btn-mapa {
         background-color: #d97706;
         border: 1px solid #b45f06;
     }
     .btn-mapa:hover { background-color: #b45f06; }
 
-    /* Variante WhatsApp (Morado Tema) */
+    /* Variante WhatsApp */
     .btn-whatsapp {
         background-color: #85386e;
         border: 1px solid #66225c;
@@ -137,10 +137,9 @@
 
     <div class="bloque-info">
         <p class="texto"><strong>World Trade Center Mexiquense</strong></p>
-        <!-- Hice la dirección un poco más pequeña para que no se amontone -->
-        <p class="texto" style="font-size: 0.75rem; margin-bottom: 5px;"> Cto. Circunvalación Ote. 10, Cd Satélite, 53100 Naucalpan de Juárez, Méx.</p>
+        <p class="texto" style="font-size: 0.75rem; margin-bottom: 3px;"> Cto. Circunvalación Ote. 10, Cd Satélite, 53100 Naucalpan de Juárez, Méx.</p>
         
-        <!-- Botón del Mapa Armonizado -->
+        <!-- Botón del Mapa proporcionado -->
         <a href="https://maps.app.goo.gl/FtNAS2uFb3nTH7ks7" target="_blank" class="btn-elegante btn-mapa">
             📍 Ver mapa
         </a>
@@ -154,7 +153,7 @@
     
     <div class="bloque-info" style="margin-top: 6px;">
         <div class="confirmacion">¡Confirma tu asistencia por mensaje!</div>
-        <!-- Botón de WhatsApp Armonizado -->
+        <!-- Botón de WhatsApp proporcionado -->
         <a href="https://wa.me/525611730224?text=¡Hola%20Adriana!%20🎃%20Confirmo%20mi%20asistencia%20a%20tu%20Pre-Fiesta%20de%20Halloween.%20¡Allá%20nos%20vemos!" target="_blank" class="btn-elegante btn-whatsapp">
             💬 Confirmar por WhatsApp
         </a>
